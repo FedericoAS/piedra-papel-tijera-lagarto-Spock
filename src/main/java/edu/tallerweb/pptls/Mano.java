@@ -24,27 +24,27 @@ public class Mano {
 	private boolean gane(final Mano otra) {
 		switch(this.mano.getValor()) {
 		 case 0:
-		     if (otra.getValor() == 3 || otra.getValor() == 4) {
+		     if (otra.getValor() == Forma.LAGARTO.getValor() || otra.getValor() == Forma.TIJERA.getValor()) {
 		    	 return true;
 		    	 }
 		     break;
 		 case 1:
-			 if (otra.getValor() == 4 || otra.getValor() == 0) {
+			 if (otra.getValor() == Forma.TIJERA.getValor() || otra.getValor() == Forma.PIEDRA.getValor()) {
 		    	 return true;
 		    	 }
 		     break;
 		 case 2:
-			 if (otra.getValor() == 0 || otra.getValor() == 1) {
+			 if (otra.getValor() == Forma.PIEDRA.getValor() || otra.getValor() == Forma.SPOCK.getValor()) {
 		    	 return true;
 		    	 }
 		     break;
 		 case 3:
-			 if (otra.getValor() == 1 || otra.getValor() == 2) {
+			 if (otra.getValor() == Forma.SPOCK.getValor() || otra.getValor() == Forma.PAPEL.getValor()) {
 		    	 return true;
 		    	 }
 		     break;
 		 case 4:
-			 if (otra.getValor() == 2 || otra.getValor() == 3) {
+			 if (otra.getValor() == Forma.PAPEL.getValor() || otra.getValor() == Forma.LAGARTO.getValor()) {
 		    	 return true;
 		    	 }
 		     break;
