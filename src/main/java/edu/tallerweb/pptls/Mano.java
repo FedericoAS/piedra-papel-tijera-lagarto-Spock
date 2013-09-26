@@ -21,37 +21,44 @@ public class Mano {
 		return this.mano.getValor();
 	}
 
-	private boolean gane(final Mano otra){
+	private boolean gane(final Mano otra) {
 		switch(this.mano.getValor()) {
 		 case 0:
 		     if (otra.getValor() == 3 || otra.getValor() == 4) {
-		    	 return true;}
+		    	 return true; 
+		    	 }
 		     break;
 		 case 1:
 			 if (otra.getValor() == 4 || otra.getValor() == 0) {
-		    	 return true;}
+		    	 return true;
+		    	 }
 		     break;
 		 case 2:
 			 if (otra.getValor() == 0 || otra.getValor() == 1) {
-		    	 return true;}
+		    	 return true;
+		    	 }
 		     break;
 		 case 3:
 			 if (otra.getValor() == 1 || otra.getValor() == 2) {
-		    	 return true;}
+		    	 return true;
+		    	 }
 		     break;
 		 case 4:
 			 if (otra.getValor() == 2 || otra.getValor() == 3) {
-		    	 return true;}
+		    	 return true;
+		    	 }
 		     break;
 		 default:
 		 	return false;
+		 	break;
 		}
 		return false;
 	}
 	
 	private boolean empate(final Mano otra) {
-		if (this.mano.getValor() == otra.getValor())
+		if (this.mano.getValor() == otra.getValor()) {
 			return true;
+		}
 		return false;
 	}
 
@@ -64,9 +71,11 @@ public class Mano {
 	public Resultado jugarCon(final Mano otra) {
 		//throw new RuntimeException("No implementado aún");
 		if (this.gane(otra)) {
-			return Resultado.GANA;}
+			return Resultado.GANA;
+			}
 		if (this.empate(otra)) {
-			return Resultado.EMPATA;}
+			return Resultado.EMPATA;
+			}
 		return Resultado.PIERDE;
 	}
 }
