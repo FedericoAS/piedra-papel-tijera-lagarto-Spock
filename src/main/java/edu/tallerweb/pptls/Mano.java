@@ -50,7 +50,6 @@ public class Mano {
 		     break;
 		 default:
 		 	return false;
-		 	break;
 		}
 		return false;
 	}
