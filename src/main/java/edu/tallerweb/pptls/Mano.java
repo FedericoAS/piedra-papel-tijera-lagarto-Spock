@@ -22,28 +22,34 @@ public class Mano {
 	}
 
 	private boolean gane(final Mano otra) {
+		final int Pie = 0;
+		final int Spo = 1;
+		final int Pap = 2;
+		final int Lag = 3;
+		final int Tij = 4;
+
 		switch(this.mano.getValor()) {
-		 case 0:
+		 case Pie:
 		     if (otra.getValor() == Forma.LAGARTO.getValor() || otra.getValor() == Forma.TIJERA.getValor()) {
 		    	 return true;
 		    	 }
 		     break;
-		 case 1:
+		 case Spo:
 			 if (otra.getValor() == Forma.TIJERA.getValor() || otra.getValor() == Forma.PIEDRA.getValor()) {
 		    	 return true;
 		    	 }
 		     break;
-		 case 2:
+		 case Pap:
 			 if (otra.getValor() == Forma.PIEDRA.getValor() || otra.getValor() == Forma.SPOCK.getValor()) {
 		    	 return true;
 		    	 }
 		     break;
-		 case 3:
+		 case Lag:
 			 if (otra.getValor() == Forma.SPOCK.getValor() || otra.getValor() == Forma.PAPEL.getValor()) {
 		    	 return true;
 		    	 }
 		     break;
-		 case 4:
+		 case Tij:
 			 if (otra.getValor() == Forma.PAPEL.getValor() || otra.getValor() == Forma.LAGARTO.getValor()) {
 		    	 return true;
 		    	 }
