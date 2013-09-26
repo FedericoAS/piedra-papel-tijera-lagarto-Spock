@@ -25,7 +25,7 @@ public class Mano {
 		switch(this.mano.getValor()) {
 		 case 0:
 		     if (otra.getValor() == 3 || otra.getValor() == 4) {
-		    	 return true; 
+		    	 return true;
 		    	 }
 		     break;
 		 case 1:
@@ -53,7 +53,7 @@ public class Mano {
 		}
 		return false;
 	}
-	
+
 	private boolean empate(final Mano otra) {
 		if (this.mano.getValor() == otra.getValor()) {
 			return true;
